@@ -4,7 +4,6 @@ from selenium import webdriver
 import time
 import pyperclip
 import pdfkit
-from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
