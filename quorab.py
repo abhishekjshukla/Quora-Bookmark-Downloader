@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
 
-brow=webdriver.Chrome("/Users/wolf/Desktop/chromedriver")
+brow=webdriver.Chrome()
 brow.get("https://www.quora.com/bookmarked_answers")
 wait_inp=input("\n\n\t\tPress Enter after Bookmark page is Fully Loaded\n\n")
 
