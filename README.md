@@ -1,37 +1,44 @@
 # Quora Bookmark Downloader
 
-A Python Script to download bookmarked answers from Quora.com
+A Python Script to download bookmarked answers from Quora
 
 # Dependencies
 
-* selenium
-* pyperclip
-* pdfkit
 * BeautifulSoup
+* pdfkit
+* selenium
+* termcolor
+* wkhtmltopdf
 
 # Install Dependencies
+
+* BeautifulSoup
+  * `pip install beautifulsoup4`
+
+* pdfkit
+  * `pip install pdfkit`
 
 * selenium
   * `pip install selenium`
   
-* pyperclip
-  * `pip install pyperclip`
-  
-* pdfkit
-  * `pip install pdfkit`
-  
-* BeautifulSoup
-  * `pip install beautifulsoup4`
+* termcolor
+  * `pip install termcolor`
 
-#### Note ####
-pdfkit also require wkhtmltopdf
+* wkhtmltopdf
+    * Install from here: https://wkhtmltopdf.org/downloads.html
 
-Install it from `https://wkhtmltopdf.org/downloads.html`
+# Usage
 
-# Run
+`python quorab.py [--auto-login <credentials_file>]`
 
-just run it from terminal/command prompt `python quorab.py`
+### If using auto-login ###
+credentials_file should be a simple 2-line python file with email and password variables. i.e.
 
-### Note ###
-After a new chrome window is opened, you have to just enter your account credentials and press `Enter` after that.
+```python
+# credentials.py
+email = 'you@domain.com'
+password = 'your_quora_password'
+```
 
+### If not using auto-login ###
+After a new Chrome window is opened, you'll need to enter your account credentials and then just press Enter.

@@ -1,0 +1,10 @@
+.vscode/
+__pycache__/
+
+# These are the defaults for ANSWERS_DIRECTORY and FAILED_FILE, respectively. 
+# If those values are changed in quorab.py, they should be changed here as well. 
+answers/
+failed.txt
+
+# Credentials file for auto-login. 
+credentials.py
